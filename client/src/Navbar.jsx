@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <div className="navbar-header">
       <div>
-        <h3>Blog App</h3>
+        <h3>BLOG</h3>
       </div>
       <div>
         <Link to="/home" className="link">

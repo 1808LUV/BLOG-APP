@@ -15,7 +15,7 @@ function Home() {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div className="post_container">
+    <div className="posts_container">
       <div>
         {posts.map((post) => (
           <Link key={post._id} to={`/post/${post._id}`}>

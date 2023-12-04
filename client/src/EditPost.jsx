@@ -32,7 +32,7 @@ function EditPost() {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div className="post_container">
+    <div className="update_post">
       <div className="post_form">
         <form onSubmit={handleSubmit}>
           <h2>Update Post</h2>

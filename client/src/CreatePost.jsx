@@ -26,7 +26,7 @@ function CreatePost() {
       .catch((err) => console.log(err));
   };
   return (
-    <div className="post_container">
+    <div className="create_post">
       <div className="post_form">
         <form onSubmit={handleSubmit}>
           <h2>Create Post</h2>

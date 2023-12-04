@@ -1,133 +1,222 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(85, 4, 109);
 }
 
 .navbar-header {
-    width: 100%;
-    height: 40px;
-    padding: 15px 25px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(79deg,
-     rgb(3, 3, 154), rgb(207, 8, 41), rgb(4, 4, 150));
+  width: 100%;
+  height: 40px;
+  padding: 15px 25px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    rgb(91, 12, 148),
+    rgb(232, 23, 194),
+    rgb(91, 12, 148)
+  );
 }
 
 .link {
-    color: white;
-    text-decoration: none;
-    margin: 0px 10px;
+  color: white;
+  text-decoration: none;
+  margin: 0px 10px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.signup_container, .post_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 90vh;
+.signup_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .signup_form {
-    border: 1px solid gray;
-    padding: 20px;
-    border-radius: 10px;
-    width: 30%;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: rgb(231, 107, 204);
 }
-.signup_form form input{
-    padding: 8px;
-    border-radius: 5px;
-    margin-top: 2px;
-    width: 100%;
-    border: 1px solid rgb(216, 213, 213);
+.signup_form form input {
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 2px;
+  width: 100%;
+  border: 1px solid rgb(216, 213, 213);
 }
 
-.signup_form form button, .signup_form button {
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 1px solid rgb(216, 213, 213);
-
+.signup_form form button,
+.signup_form button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid rgb(216, 213, 213);
 }
 .signup_form form button {
-    background-color: rgb(17, 80, 227);
-    color: white;
+  background-color: rgb(46, 102, 235);
+  color: white;
+  border: 2px solid black;
 }
 .signup_form button {
-    background-color: rgb(3, 177, 18);
-    color: white;
+  background-color: rgb(26, 220, 42);
+  color: white;
+  border: 2px solid black;
 }
 .signup_btn {
-    margin-top: 8px;
-    cursor: pointer;
+  margin-top: 8px;
+  cursor: pointer;
 }
 
 .btn_input {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-weight: bolder;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 17px;
 }
 
 .post_form {
-    width: 50%;
-    border: 1px solid gray;
-    padding: 20px;
+  width: 50%;
+  border: 1px solid gray;
+  padding: 20px;
+  background-color: rgb(231, 107, 204);
 }
-.post_form input, .post_form textarea, .post_form button {
-    width: 100%;
-    margin: 10px 0px;
-    padding: 8px;
+.post_form input,
+.post_form textarea,
+.post_form button {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 8px;
+}
+.post_form textarea {
+  resize: none;
 }
 .post_form .file {
-    border: 1px solid gray;
+  border: 1px solid gray;
 }
 .post_form button {
-    cursor: pointer;
-    background-color: green;
-    color: white;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .posts_container {
-    display: flex;
-    margin-top: 20px;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .post {
-    width: 80%;
-    margin: 10px;
-    border: 1px solid gray;
-    padding: 10px;
-    display: flex;
-    text-decoration: none;
-    color: black;
+  width: 80%;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  background-color: white;
 }
 
 .post img {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
-.post .post_text {
-    margin-left: 10px;
-    text-decoration: none;
+.post {
+  margin-left: 10px;
+}
+.post_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 190px;
 }
 .post_post {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 20px 0px;
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.info_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
 }
 
 .post_post img {
-    width: 100%;
-    height: 450px;
+  width: 100%;
+  height: 450px;
 }
 
 .post_post button {
-    width: 10%;
+  width: 45%;
+  padding-top: 2px;
+  background-color: rgb(237, 85, 85);
+}
+
+.post_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 15px;
+  background-color: greenyellow;
+}
+.delete {
+  border: 2px solid black;
+  width: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 15px;
+}
+
+.update_post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.create_post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.info_text h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.info_text p {
+  margin-bottom: 10px;
 }
